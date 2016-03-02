@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>The Code Review</title>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link href='https://fonts.googleapis.com/css?family=Merriweather:400,300italic,300,400italic,700italic,700' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="css/main.css">
+  </head>
+  
+  <body>
+    <div class="header-bar">
+      <h1>The Code Review</h1>
+    </div>
+    <div class="header-news">
+      <h2 class="padded-top">Signup for our newsletter</h2>
+      <p class="padded-bottom">Get the latest news on how your code is doing right in your inbox</p>
+    </div>
+    <form action="index.html" method="post">
+      <fieldset id="contact-info">  
+        <h2 class="left-align">Contact Information</h2>
+        <label for="name">Full Name</label>
+        <input type="text" id="name" name="user_name" placeholder="Required">
+        <label for="email">Email Address</label>
+        <input type="email" id="email" name="user_email" placeholder="Required">
+        <label for="phone">Phone Number</label>
+        <input type="tel" id="phone" name="user_phone">
+        <label for="address">Street Address</label>
+        <input type="text" id="address" name="user_address">
+        <label for="city">City</label>
+        <input type="text" id="city" name="user_city">
+        <label for="state">State</label>
+        <select id="state" name="user_state">
+          <option value="choose_state" selected>Choose State</option>
+          <option value="alabama">Alabama</option>
+          <option value="alabama">Alabama</option>
+          <option value="alabama">Alabama</option>
+          <option value="alabama">Alabama</option>
+          <option value="alabama">Alabama</option>
+          <option value="alabama">Alabama</option>
+          <option value="alabama">Alabama</option>
+          <option value="alabama">Alabama</option>
+        </select>
+        <label for="zip_code">Zip Code</label>
+        <input type="text" id="zip_code" name="user_zip"> 
+      </fieldset>
+      <fieldset id="newsletter">
+        <h2 class="left-align">Newsletter</h2>
+        <p class="left-align">Select the newsletters you would like to receive</p>
+        <label for="html"><input type="checkbox" id="html" value="html_news" name="user_interest">HTML News</label><br>
+        <label for="css"><input type="checkbox" id="css" value="css_news" name="user_interest">CSS News</label><br>
+        <label for="javascript"><input type="checkbox" id="javascript" value="javascript_news" name="user_interest">Javascript News</label><br>
+      </fieldset>
+    
+    </form>
+  </body>
+</html>
