@@ -2,16 +2,20 @@
 <html>
   <head>
     <meta charset="utf-8">
-    <title>The Code Review</title>
     <link rel="stylesheet" href="css/normalize.css">
     <link href='https://fonts.googleapis.com/css?family=Merriweather:400,300italic,300,400italic,700italic,700' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Code Review</title>
+    
   </head>
   
   <body>
     <div class="header-bar">
       <h1>The Code Review</h1>
     </div>
+    <div id="media_wrapper">
     <div class="header-news">
       <h2 class="padded-top">Signup for our newsletter</h2>
       <p class="padded-bottom">Get the latest news on how your code is doing right in your inbox</p>
@@ -19,8 +23,8 @@
     <form action="index.html" method="post">
       <fieldset id="contact-info">  
         <h2 class="left-align">Contact Information</h2>
-        <label for="name">Full Name</label>
-        <input type="text" id="name" name="user_name" placeholder="Required">
+          <label for="name">Full Name</label>
+          <input type="text" id="name" name="user_name" placeholder="Required">
         <label for="email">Email Address</label>
         <input type="email" id="email" name="user_email" placeholder="Required">
         <label for="phone">Phone Number</label>
@@ -32,26 +36,42 @@
         <label for="state">State</label>
         <select id="state" name="user_state">
           <option value="choose_state" selected>Choose State</option>
-          <option value="alabama">Alabama</option>
-          <option value="alabama">Alabama</option>
-          <option value="alabama">Alabama</option>
-          <option value="alabama">Alabama</option>
-          <option value="alabama">Alabama</option>
-          <option value="alabama">Alabama</option>
-          <option value="alabama">Alabama</option>
-          <option value="alabama">Alabama</option>
+          <option value="winterfell">The North</option>
+          <option value="riverrun">The Riverlands</option>
+          <option value="eyrie">The Vale</option>
+          <option value="casterly">The Westernlands</option>
+          <option value="storms">The Stormlands</option>
+          <option value="highgarden">The Reach</option>
+          <option value="sunspear">Dorne</option>
+          <option value="pyke">The Iron Islands</option>
         </select>
         <label for="zip_code">Zip Code</label>
         <input type="text" id="zip_code" name="user_zip"> 
       </fieldset>
+      
       <fieldset id="newsletter">
         <h2 class="left-align">Newsletter</h2>
         <p class="left-align">Select the newsletters you would like to receive</p>
         <label for="html"><input type="checkbox" id="html" value="html_news" name="user_interest">HTML News</label><br>
         <label for="css"><input type="checkbox" id="css" value="css_news" name="user_interest">CSS News</label><br>
         <label for="javascript"><input type="checkbox" id="javascript" value="javascript_news" name="user_interest">Javascript News</label><br>
+        <label for="wall_news"><input type="checkbox" id="wall_news" value="wall_news" name="user_interest">News from The Wall</label><br>
+        
+        <p class="left-align">Newsletter format</p>
+        <label for="html_radio"><input type="radio" id="html_radio" value="html_radio" name="user_format">HTML</label><br>
+        <label for="plain_text_radio"><input type="radio" id="plain_text_radio" value="plain_text_radio" name="user_format">Plain text</label><br>
+        <label for="raven_radio"><input type="radio" id="raven_radio" value="raven_text_radio" name="user_format">By raven</label><br>
+        
       </fieldset>
-    
+      
+      <fieldset>
+        <label for="other_topics">Other topics you'd like to hear about</label>
+        <textarea id="other_topics" name="other_topics"></textarea><br>
+       <button>Sign Up</button>
+      </fieldset>
     </form>
+    
+    <footer>Copyright The Code Review</footer>
+    </div>
   </body>
 </html>

@@ -1,5 +1,9 @@
 /*Element Styles*/
 
+* {
+  box-sizing: border-box;
+}
+
 body {
   font-family: 'Merriweather', serif;
   text-align: center;
@@ -13,6 +17,7 @@ h1 {
   color: white;
 }
 
+
 h2 {
   color: #2d3945;
   font-size: 1.4em;
@@ -21,6 +26,13 @@ h2 {
 p {
   color: #9da3a8;
   font-size: 1.1em;
+}
+
+footer {
+  color: #9da3a8;
+  font-size: .9em;
+  font-style: italic;
+  padding: 1em 0 15em 0;
 }
 
 /*Reusable Class Styling*/
@@ -63,13 +75,17 @@ p {
 
 /*Form Styles*/
 
+fieldset {
+  border-style: none;
+}
+
 #contact-info{
   width: 90%;
   margin: auto;
   border-bottom: 2px solid black;
 }
 
-  label {
+  label{
     display: block;
     text-align: left;
     color: #9da3a8;
@@ -77,45 +93,8 @@ p {
     margin: 5px 0;
   }
 
-  input, select {
-    display: block;
-    width: 95%;
-    margin: auto;
-    height: 50px;
-    border-style: none;
-    border-radius: 7%;
-    background-color: #eff0f1;
-    color: #b3b8bb;
-  }
 
-  #zip_code {
-    width: 45%;
-    margin: 10px;
-    margin-bottom: 20px;
-  }
-
-input[type="radio"],
-input[type="checkbox"] {
-  width: 20px;
-  height: 20px;
-  display: inline-block;
-  margin-right: 15px;
-}
-
-input[type="checkbox"]:checked {
-  border: 1px solid red;  
-}
-
-#newsletter label {
-  padding: 0;
-  margin: -5px;
-}
-
-/*Pseudos*/
-
-select:focus, input:focus {
-  border-color: #46698b;
-}
+/*Placeholder Styling*/
 
 ::-webkit-input-placeholder { /* Chrome/Opera/Safari */
   color: #a8adb2;
@@ -146,3 +125,57 @@ select:focus, input:focus {
   font-style: italic;
   padding-right: 10px;
 }
+
+
+  input, select, textarea, button, #zip_code {
+    display: block;
+    width: 95%;
+    margin: auto;
+    height: 50px;
+    border-style: none;
+    border-radius: 7%;
+    background-color: #eff0f1;
+    color: #b3b8bb;
+  }
+
+
+  #zip_code {
+    width: 45%;
+    margin: 10px 0 20px 10px;
+  }
+
+
+input[type="radio"],
+input[type="checkbox"] {
+  width: 20px;
+  height: 20px;
+  display: inline-block;
+  margin-right: 15px;
+  margin-left: 5px;
+}
+
+#newsletter label {
+  padding: 0;
+  margin: -5px;
+}
+
+/*Pseudos*/
+
+select:focus, input:focus, textarea:focus {
+  box-shadow: 0px 0px 25px 1px rgba(0,0,0,0.47);
+  outline: none;
+}
+
+
+textarea {
+  resize: none;
+  height: 7em;
+}
+
+button {
+  background-color: #4ebbb5;
+  color: white;
+  font-size: 1.2em;
+  height: 3.4em;
+}
+
