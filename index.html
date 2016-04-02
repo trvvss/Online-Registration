@@ -22,7 +22,7 @@
     </div>
     <form action="index.html" method="post">
       <fieldset id="contact-info">  
-        <h2 class="left-align">Contact Information</h2>
+        <legend class="left-align">Contact Information</legend>
           <label for="name">Full Name</label>
           <input type="text" id="name" name="user_name" placeholder="Required">
         <label for="email">Email Address</label>
@@ -35,7 +35,9 @@
         <input type="text" id="city" name="user_city">
         <label for="state">State</label>
         <select id="state" name="user_state">
-          <option value="choose_state" selected>Choose State</option>
+<!--          I kept the following in my code, but commented out for my potential future reference-->
+<!--          <option value="choose_state" selected>Choose State</option>-->
+          <option value=”” disabled selected hidden>Choose State</option>
           <option value="winterfell">The North</option>
           <option value="riverrun">The Riverlands</option>
           <option value="eyrie">The Vale</option>
@@ -50,7 +52,7 @@
       </fieldset>
       
       <fieldset id="newsletter">
-        <h2 class="left-align">Newsletter</h2>
+        <legend class="left-align">Newsletter</legend>
         <p class="left-align">Select the newsletters you would like to receive</p>
         <label for="html"><input type="checkbox" id="html" value="html_news" name="user_interest">HTML News</label><br>
         <label for="css"><input type="checkbox" id="css" value="css_news" name="user_interest">CSS News</label><br>
@@ -65,7 +67,7 @@
       </fieldset>
       
       <fieldset>
-        <label for="other_topics">Other topics you'd like to hear about</label>
+        <legend class="clearformatting left-align"><label for="other_topics">Other topics you'd like to hear about</label></legend>
         <textarea id="other_topics" name="other_topics"></textarea><br>
        <button>Sign Up</button>
       </fieldset>
